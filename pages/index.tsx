@@ -1,8 +1,12 @@
 import type { NextPage } from 'next'
+import DefaultLayout from "../app/common/components/layouts/DefaultLayout";
+import ImageStack from "../app/modules/unsplash/ImageStack"
 
 const Home: NextPage = () => {
   return (
-    <h1>Hi</h1>
+    <DefaultLayout>
+      <ImageStack />
+    </DefaultLayout>
   )
 }
 
