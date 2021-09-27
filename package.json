@@ -15,15 +15,25 @@
     "@emotion/styled": "^11.3.0",
     "@fontsource/montserrat": "^4.5.1",
     "@fontsource/noto-sans": "^4.5.1",
+    "@hookform/resolvers": "^2.8.1",
+    "@prisma/client": "^3.1.1",
+    "axios": "^0.21.4",
     "framer-motion": "^4.1.17",
+    "joi": "^17.4.2",
     "next": "11.1.2",
+    "next-connect": "^0.10.2",
+    "next-joi": "^2.2.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-hook-form": "^7.16.0",
+    "swr": "^1.0.1"
   },
   "devDependencies": {
+    "@types/joi": "^17.2.3",
     "@types/react": "17.0.24",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2",
+    "prisma": "^3.1.1",
     "typescript": "4.4.3"
   }
 }
