@@ -1,34 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![MyUnsplash Logo](https://i.ibb.co/xqKjt3G/myunsplashlogo.jpg)
 
-## Getting Started
+# MyUnsplash
 
-First, run the development server:
+[MyUnsplash](www.myunsplash.com) is a simplified version of Unsplash. Upload images to share with everyone!
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+This project was built to further my full stack development skills and provide an opportunity to experiment with new
+technologies I had been interested in trying, specifically using a database hosted on AWS RDS, and libraries
+`next-connect`, `next-joi` and `react-hook-form`.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![Demo gif](https://im3.ezgif.com/tmp/ezgif-3-ff1316d02778.gif)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Built With:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- Next.JS
+- React
+- ChakraUI
+- Prisma ORM
+- AWS RDS
+- MySQL
+- Netlify
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Additional libraries used include: `joi`, `next-joi`, `next-connect`, `react-hook-form` and `swr`.
 
-## Learn More
+## Features:
 
-To learn more about Next.js, take a look at the following resources:
+### Responsive design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Responsive design demo gif](https://im3.ezgif.com/tmp/ezgif-3-b0ca894513a5.gif)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Responsive design built using ChakraUI, application has 3 breakpoints for different size screens. Images are displayed
+in 1 to 3 columns depending on this. Images have a different design for tablet and mobile users to be more touch screen
+friendly.
 
-## Deploy on Vercel
+### Filter Images
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Filter images demo gif](https://im3.ezgif.com/tmp/ezgif-3-02424b345230.gif)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Displayed images will update as search query is entered, images displayed if the image label text contains a match with
+the search query.
+
+### Upload Images
+
+![Upload image demo gif](https://im3.ezgif.com/tmp/ezgif-3-ff1316d02778.gif)
+
+Uploading images is easy! Enter your image URL and a label to accompany it, the input is then validated using `joi`. If
+the input passes validation, request then is sent to `POST /api/images`, the image and label will be stored in the
+database using `prisma`.
+
+A modal will show the result of the image upload, if successful `swr` will then revalidate the data to update the shown
+images to include our new image.
+
+### Delete Images
+
+![Delete image demo gif](https://im3.ezgif.com/tmp/ezgif-3-765a05558422.gif)
+
+Clicking the delete button will send a `DELETE /api/images/:id` request, if a valid `id` is provided, `prisma` will then
+delete the image from the database.
+
+A modal will show the result of the image delete, deleted successfully, `swr` will then revalidate the data to update
+images and remove the deleted image on the client browser.
