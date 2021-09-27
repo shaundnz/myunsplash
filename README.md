@@ -8,7 +8,7 @@ This project was built to further my full stack development skills and provide a
 technologies I had been interested in trying, specifically using a database hosted on AWS RDS, and libraries
 `next-connect`, `next-joi` and `react-hook-form`.
 
-![Demo gif](https://im3.ezgif.com/tmp/ezgif-3-ff1316d02778.gif)
+![Demo gif](https://i.imgur.com/yMKdpZc.gif)
 
 ### Built With:
 
@@ -26,7 +26,7 @@ Additional libraries used include: `joi`, `next-joi`, `next-connect`, `react-hoo
 
 ### Responsive design
 
-![Responsive design demo gif](https://im3.ezgif.com/tmp/ezgif-3-b0ca894513a5.gif)
+![Responsive design demo gif](https://i.imgur.com/b45IX86.gif)
 
 Responsive design built using ChakraUI, application has 3 breakpoints for different size screens. Images are displayed
 in 1 to 3 columns depending on this. Images have a different design for tablet and mobile users to be more touch screen
@@ -34,14 +34,14 @@ friendly.
 
 ### Filter Images
 
-![Filter images demo gif](https://im3.ezgif.com/tmp/ezgif-3-02424b345230.gif)
+![Filter images demo gif](https://i.imgur.com/KKvHpe4.gif)
 
 Displayed images will update as search query is entered, images displayed if the image label text contains a match with
 the search query.
 
 ### Upload Images
 
-![Upload image demo gif](https://im3.ezgif.com/tmp/ezgif-3-ff1316d02778.gif)
+![Upload image demo gif](https://i.imgur.com/yMKdpZc.gif)
 
 Uploading images is easy! Enter your image URL and a label to accompany it, the input is then validated using `joi`. If
 the input passes validation, request then is sent to `POST /api/images`, the image and label will be stored in the
@@ -52,7 +52,7 @@ images to include our new image.
 
 ### Delete Images
 
-![Delete image demo gif](https://im3.ezgif.com/tmp/ezgif-3-765a05558422.gif)
+![Delete image demo gif](https://i.imgur.com/Xfe6zcP.gif)
 
 Clicking the delete button will send a `DELETE /api/images/:id` request, if a valid `id` is provided, `prisma` will then
 delete the image from the database.
