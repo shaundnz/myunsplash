@@ -2,7 +2,7 @@
 
 # MyUnsplash
 
-[MyUnsplash](www.myunsplash.com) is a simplified version of Unsplash. Upload images to share with everyone!
+[MyUnsplash](https://myunsplash-shaundnz.netlify.app/) is a simplified version of Unsplash. Upload images to share with everyone!
 
 This project was built to further my full stack development skills and provide an opportunity to experiment with new
 technologies I had been interested in trying, specifically using a database hosted on AWS RDS, and libraries
