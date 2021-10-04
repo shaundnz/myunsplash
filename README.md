@@ -4,6 +4,8 @@
 
 [MyUnsplash](https://myunsplash-shaundnz.netlify.app/) is a simplified version of Unsplash. Upload images to share with everyone!
 
+Project is hosted on Netlify, check it out [here!](https://myunsplash-shaundnz.netlify.app/)
+
 This project was built to further my full stack development skills and provide an opportunity to experiment with new
 technologies I had been interested in trying, specifically using a database hosted on AWS RDS, and libraries
 `next-connect`, `next-joi` and `react-hook-form`.
